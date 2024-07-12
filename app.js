@@ -7,7 +7,7 @@ const blogRoutes = require('./routes/blogRoutes')
 const app = express()
 
 //connect to mongodb
-const dbURI = 'mongodb+srv://tleng:hershebar8@nodetuts.j90bele.mongodb.net/node-tuts?retryWrites=true&w=majority&appName=nodetuts'
+const dbURI = 'YOUR_MONGODB_URI'
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then((result) => app.listen(3000))
     .catch((err) => console.log(err))
